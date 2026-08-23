@@ -57,10 +57,11 @@ cover, resolved as follows:
 ## What replaced the SaaS-tech motifs
 
 - **Hero backgrounds:** the old dot-grid (`radial-gradient` of small dots, a very common
-  "AI-generated landing page" tell) is gone. Hero sections are now flat `ink` with a
+  "AI-generated landing page" tell) is gone. Hero sections were briefly flat `ink` with a
   faint horizontal `repeating-linear-gradient` in low-opacity brass, evoking ruled ledger
-  paper. Subtle by design — it should read as a texture, not a pattern you consciously
-  notice.
+  paper — Nico flagged this directly as unwanted ("get rid of all those stupid thin brown
+  lines... remove it entirely") and it's gone too. Hero sections are now just flat, solid
+  `ink` (`background-color: #17233F;`), no gradient or pattern at all.
 - **Gradients removed:** two-stop Tailwind gradients (`from-X-50 to-Y-50`), another
   landing-page default, are gone wherever they existed (the assessment readiness ladder,
   the live score card). Replaced with flat `card`/`paperMuted` backgrounds and a colored

@@ -58,7 +58,7 @@ accent sections), same convention as before the rebrand. Don't add
 - Display/headline (`font-display` in Tailwind, h1–h3, wordmark, pull quotes): **Fraunces**, weight 500 normally, 600 only for the largest hero headline.
 - Body/UI (`font-sans`, default): **Public Sans**, 400/500/600/700.
 - Eyebrow labels: Public Sans 600, 11–12px, uppercase, letter-spacing ~0.14em, color `brand-brass`.
-- No monospace anywhere. No "SaaS-tech" motifs — no dot-grid backgrounds, no terminal/code-block styling, no bright cyan/green accent colors. Hero sections use a flat `ink` background with a faint horizontal ledger-rule pattern (see `.hero-pattern` in each page's `<style>` block), not a dot grid.
+- No monospace anywhere. No "SaaS-tech" motifs — no dot-grid backgrounds, no terminal/code-block styling, no bright cyan/green accent colors. Hero sections use a flat, solid `ink` background (`.hero-pattern` in each page's `<style>` block is just `background-color: #17233F;`) — no gradient, no ruled-line texture, no pattern of any kind. An earlier faint brass ruled-line texture on hero sections was flagged directly by Nico ("get rid of all those stupid thin brown lines") and removed sitewide; don't reintroduce it or any other hero background pattern.
 
 **The mark ("Open Ledger"):** two facing arcs suggesting an open book seen from above.
 Badge version (favicon, square contexts) is `assets/favicon.svg`. Inline/line version
@@ -84,12 +84,11 @@ Two patterns got flagged by Nico directly and are banned sitewide, not just fixe
   pricing-tier tag, a category label on an article card) are fine; the tell is
   specifically an empty decorative eyebrow doing no informational work beyond
   "here's the topic."
-- **Never put a translucent card directly on a `.hero-pattern` surface.** The
-  `hero-pattern` background has a faint ledger-rule texture, and a `bg-brand-paper/5`
-  (or similar low-opacity) card lets that texture visibly show through the card
-  interior, which reads as distracting/unintentional rather than deliberate. Any card
-  sitting on top of a hero section needs an opaque background — use `bg-brand-inkElevated`
-  (solid), not a `brand-paper` or `brand-ink` opacity variant.
+- **Never put a translucent card directly on a `.hero-pattern` surface.** A
+  `bg-brand-paper/5` (or similar low-opacity) card on the flat `ink` hero background
+  reads as washed-out and unintentional rather than deliberate. Any card sitting on top
+  of a hero section needs an opaque background — use `bg-brand-inkElevated` (solid), not
+  a `brand-paper` or `brand-ink` opacity variant.
 
 ## Voice rules
 
