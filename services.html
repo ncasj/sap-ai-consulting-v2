@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <script src="consent.js"></script>
+    <script src="analytics.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services &amp; Pricing | Solutions Advisory Partners</title>
+    <meta name="description" content="Three engagements for professional-services firms: an Automation Audit ($2.5k-$4k), a fixed-fee Implementation proven against written success criteria ($6k-$12k), and monthly Advisory ($1.5k-$3k/mo). One engagement at a time.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="assets/tailwind.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
+        .hero-pattern {
+            background-color: #0b1120;
+            background-image: radial-gradient(#1c2941 1px, transparent 1px);
+            background-size: 22px 22px;
+        }
+    </style>
+    <link rel="canonical" href="https://www.solutionsadvisorypartners.com/services.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Services &amp; Pricing | Solutions Advisory Partners">
+    <meta property="og:description" content="Automation Audit, fixed-fee Implementation with a written pass/fail gate, and monthly Advisory. Prices posted, one engagement at a time.">
+    <meta property="og:url" content="https://www.solutionsadvisorypartners.com/services.html">
+    <meta property="og:site_name" content="Solutions Advisory Partners">
+    <meta property="og:image" content="https://www.solutionsadvisorypartners.com/assets/og-default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Services &amp; Pricing | Solutions Advisory Partners">
+    <meta name="twitter:description" content="Audit, Implementation, Advisory. Prices posted, one engagement at a time.">
+</head>
+<body class="bg-brand-light text-slate-800 antialiased">
+
+    <nav class="fixed w-full z-50 bg-brand-light/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 text-xl md:text-2xl font-display font-bold text-brand-dark tracking-tight">
+                <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="6" fill="#0b1120"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#34d399" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Solutions Advisory
+            </a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="services.html" class="text-emerald-600 font-semibold">Services</a>
+                <a href="about.html" class="hover:text-emerald-600 transition">About</a>
+                <a href="assessment.html" class="hover:text-emerald-600 transition">Assessment</a>
+                <a href="insights.html" class="hover:text-emerald-600 transition">Insights</a>
+                <a href="contact.html" class="px-5 py-2 bg-brand-dark text-white rounded-full hover:bg-slate-700 transition">Contact</a>
+                <a href="https://www.linkedin.com/company/solutions-engineering-advisory/" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-[#0A66C2] transition" aria-label="LinkedIn">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+            </div>
+            <button id="mobileMenuBtn" class="md:hidden p-2 text-slate-600 hover:text-emerald-600 transition" aria-label="Toggle menu" aria-expanded="false">
+                <svg id="iconHam" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <svg id="iconX" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-slate-200">
+            <div class="px-6 py-4 flex flex-col space-y-1">
+                <a href="services.html" class="block px-3 py-3 rounded-lg text-base font-medium text-emerald-600 hover:bg-slate-100 transition">Services</a>
+                <a href="about.html" class="block px-3 py-3 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100 transition">About</a>
+                <a href="assessment.html" class="block px-3 py-3 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100 transition">Assessment</a>
+                <a href="insights.html" class="block px-3 py-3 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100 transition">Insights</a>
+                <a href="contact.html" class="block mt-2 px-3 py-3 bg-brand-dark text-white text-base font-bold text-center rounded-lg hover:bg-slate-700 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <script>
+    (function(){var b=document.getElementById('mobileMenuBtn'),m=document.getElementById('mobileMenu'),h=document.getElementById('iconHam'),x=document.getElementById('iconX');if(!b||!m)return;b.addEventListener('click',function(){m.classList.toggle('hidden');h.classList.toggle('hidden');x.classList.toggle('hidden');b.setAttribute('aria-expanded',m.classList.contains('hidden')?'false':'true');});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.add('hidden');h.classList.remove('hidden');x.classList.add('hidden');b.setAttribute('aria-expanded','false');});});})();
+    </script>
+
+    <!-- HERO -->
+    <section class="hero-pattern text-white pt-32 pb-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="inline-block px-3 py-1 mb-6 text-xs font-semibold tracking-wider text-brand-accent uppercase bg-brand-accent/10 rounded-full border border-brand-accent/20">
+                Services &amp; Pricing
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                Three Engagements. One at a Time. Proven Every Time.
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto">
+                Audit the manual work, implement the highest-value automation against written success criteria, then compound what passed. Fixed fees, posted below. No long contracts.
+            </p>
+            <a href="#offers" class="inline-block px-8 py-4 bg-brand-accent text-brand-dark font-bold rounded-lg hover:bg-white transition text-center">
+                See the Engagements
+            </a>
+        </div>
+    </section>
+
+    <!-- IN-PAGE SUB-NAV -->
+    <div class="sticky top-[63px] z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex items-center justify-center gap-6 sm:gap-10 py-3 text-sm font-medium text-slate-500 overflow-x-auto">
+                <a href="#offers" class="whitespace-nowrap hover:text-emerald-600 transition">Engagements</a>
+                <a href="#method" class="whitespace-nowrap hover:text-emerald-600 transition">Method</a>
+                <a href="#automations" class="whitespace-nowrap hover:text-emerald-600 transition">Automation Library</a>
+                <a href="#faq" class="whitespace-nowrap hover:text-emerald-600 transition">FAQ</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- IDEAL FOR / NOT FOR -->
+    <section class="py-12 bg-white border-b border-slate-100">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        </div>
+                        <h2 class="text-2xl font-bold text-brand-dark">Ideal For</h2>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-500 mt-1 shrink-0">&check;</span>
+                            <span class="text-slate-700">Law, accounting, consulting, and financial-advisory firms with roughly 5&ndash;50 people</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-500 mt-1 shrink-0">&check;</span>
+                            <span class="text-slate-700">Owner- or partner-led, with no technical staff on payroll</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-500 mt-1 shrink-0">&check;</span>
+                            <span class="text-slate-700">Billable hours lost to intake, drafting, billing, and client reporting</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-500 mt-1 shrink-0">&check;</span>
+                            <span class="text-slate-700">Partners who want evidence before they commit real budget</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-500 mt-1 shrink-0">&check;</span>
+                            <span class="text-slate-700">Skeptical of AI hype, open to AI results</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                        </div>
+                        <h2 class="text-2xl font-bold text-brand-dark">Likely Not a Fit</h2>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400 mt-1 shrink-0">&times;</span>
+                            <span class="text-slate-700">Firms already building AI with in-house technical staff</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400 mt-1 shrink-0">&times;</span>
+                            <span class="text-slate-700">Solo practices under roughly $500k in revenue: the engagement math rarely works yet</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400 mt-1 shrink-0">&times;</span>
+                            <span class="text-slate-700">Work that requires regulated-data handling beyond the scope we agree in writing</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400 mt-1 shrink-0">&times;</span>
+                            <span class="text-slate-700">Anyone shopping for an &ldquo;AI strategy deck&rdquo; with no intent to ship anything</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFFER CARDS -->
+    <section id="offers" class="scroll-mt-24 py-16 bg-slate-50 border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-10">
+                <p class="text-emerald-600 font-medium text-sm uppercase tracking-widest mb-4">Engagements</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Each Step Earns the Next</h2>
+                <p class="text-slate-600 text-lg max-w-2xl mx-auto">Start with the audit. Implement only what the roadmap says will pay back. Stop whenever the numbers say stop.</p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Card 1: Audit -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 flex flex-col">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="inline-block text-xs font-semibold px-3 py-1 bg-brand-accent/10 text-emerald-700 rounded-full border border-brand-accent/20">Start Here</span>
+                        <span class="text-xs text-slate-400 font-medium">2&ndash;3 weeks</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-1">Automation Audit</h3>
+                    <p class="text-2xl font-bold text-brand-dark mb-4">$2,500&ndash;$4,000 <span class="text-sm font-medium text-slate-500">fixed</span></p>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-5">A structured diagnostic of where your firm&rsquo;s hours actually go, and what automating them is worth in dollars, not adjectives.</p>
+                    <ul class="space-y-2 text-sm text-slate-600 mb-6 flex-grow">
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">&bull;</span>Process inventory: intake, drafting, billing, reporting, email, scheduling</li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">&bull;</span>Effort vs. impact scoring for every candidate</li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">&bull;</span>Dollar values: hours &times; loaded cost, per process</li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">&bull;</span>Tool &amp; data readiness check for your practice-management stack</li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">&bull;</span>A ranked roadmap your firm owns, whoever builds it</li>
+                    </ul>
+                    <a href="contact.html" class="block w-full py-3 border border-brand-dark text-brand-dark font-bold text-center rounded-lg hover:bg-brand-dark hover:text-white transition">Ask About an Audit</a>
+                </div>
+                <!-- Card 2: Implementation (FEATURED) -->
+                <div class="bg-brand-dark p-8 rounded-xl shadow-xl border border-slate-700 flex flex-col relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brand-accent text-brand-dark text-xs font-bold px-3 py-1 uppercase">Flagship</div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="inline-block text-xs font-bold px-3 py-1 bg-brand-accent/20 text-brand-accent rounded-full border border-brand-accent/30">Prove It</span>
+                        <span class="text-xs text-slate-500 font-medium mr-16">Scoped per build</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Implementation</h3>
+                    <p class="text-2xl font-bold text-white mb-4">$6,000&ndash;$12,000 <span class="text-sm font-medium text-slate-400">fixed &middot; audit fee credits</span></p>
+                    <p class="text-sm text-slate-300 leading-relaxed mb-5">One automation from your roadmap, built on your firm&rsquo;s real work in your firm&rsquo;s real tools. The finish line is agreed before the starting gun.</p>
+                    <ul class="space-y-2 text-sm text-slate-300 mb-6 flex-grow">
+                        <li class="flex items-start"><span class="text-brand-accent mr-2">&bull;</span>Success criteria in writing: hours saved, turnaround, error rate</li>
+                        <li class="flex items-start"><span class="text-brand-accent mr-2">&bull;</span>Built into the tools you already use</li>
+                        <li class="flex items-start"><span class="text-brand-accent mr-2">&bull;</span>A person reviews wherever judgment or client contact lives</li>
+                        <li class="flex items-start"><span class="text-brand-accent mr-2">&bull;</span>A measured scorecard at the end</li>
+                        <li class="flex items-start"><span class="text-brand-accent mr-2">&bull;</span>Pass &rarr; scale. Miss &rarr; you stop, keep everything, know why.</li>
+                    </ul>
+                    <a href="contact.html" class="block w-full py-3 bg-brand-accent text-brand-dark font-bold text-center rounded-lg hover:bg-white transition">Ask About Implementation</a>
+                </div>
+                <!-- Card 3: Advisory -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 flex flex-col">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="inline-block text-xs font-semibold px-3 py-1 bg-brand-accent/10 text-emerald-700 rounded-full border border-brand-accent/20">Compound It</span>
+                        <span class="text-xs text-slate-400 font-medium">Monthly</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-1">Advisory / Enablement</h3>
+                    <p class="text-2xl font-bold text-brand-dark mb-4">$1,500&ndash;$3,000<span class="text-sm font-medium text-slate-500">/mo &middot; 3-month minimum</span></p>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-5">For firms that want to build with their own people or tools: I map, design, and pressure-test; your team executes with my oversight.</p>
+                    <ul class="space-y-2 text-sm text-slate-600 mb-6 flex-grow">
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">&bull;</span>Monthly working sessions and a standing priority list</li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">&bull;</span>Architecture and vendor guidance in plain English</li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">&bull;</span>Review of what your team builds before it touches clients</li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">&bull;</span>Success criteria and measurement on everything</li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">&bull;</span>Async access for questions between sessions</li>
+                    </ul>
+                    <a href="contact.html" class="block w-full py-3 border border-brand-dark text-brand-dark font-bold text-center rounded-lg hover:bg-brand-dark hover:text-white transition">Ask About Advisory</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl border-2 border-brand-accent/40 p-8 mt-10 max-w-3xl mx-auto text-center">
+                <h3 class="text-lg font-bold text-brand-dark mb-2">One paid engagement at a time. On purpose.</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">This is a deliberately small practice run by one senior operator, not an agency with a bench. I take one implementation at a time so yours gets finished, tested, and adopted before I start the next. If there&rsquo;s a queue, you&rsquo;ll know your start date before you pay anything.</p>
+            </div>
+            <p class="text-center text-sm text-slate-500 leading-relaxed mt-8 max-w-2xl mx-auto">Prices are posted because this buyer, meaning you, distrusts &ldquo;call for pricing.&rdquo; Where a build lands in its range depends on scope and integrations, and you&rsquo;ll have the exact number in writing before anything starts.</p>
+        </div>
+    </section>
+
+    <!-- METHOD -->
+    <section id="method" class="scroll-mt-24 py-16 bg-white border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-10">
+                <p class="text-emerald-600 font-medium text-sm uppercase tracking-widest mb-4">The Method</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Map. Build. Prove. Compound.</h2>
+                <p class="text-slate-600 text-lg max-w-2xl mx-auto">Enterprise buyers never take a vendor&rsquo;s word. They demand a proof of concept with success criteria and a clock. I ran those evaluations for ten years. The same gauntlet now protects your firm&rsquo;s budget.</p>
+            </div>
+            <div class="relative">
+                <div class="hidden md:block absolute left-7 top-0 bottom-0 w-px bg-slate-300"></div>
+                <div class="space-y-8">
+                    <div class="flex flex-col md:flex-row gap-5 items-start relative">
+                        <div class="shrink-0 w-14 h-14 rounded-full bg-brand-dark flex items-center justify-center text-brand-accent font-bold text-lg z-10">1</div>
+                        <div class="flex-1 bg-slate-50 rounded-xl border border-slate-200 p-6">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                                <h3 class="text-lg font-bold text-brand-dark">Intro Call</h3>
+                                <span class="inline-block text-xs font-medium text-slate-500 bg-white px-3 py-1 rounded-full uppercase tracking-wider border border-slate-200">30 min &middot; Free</span>
+                            </div>
+                            <p class="text-slate-600 text-sm mb-3">Bring the process that annoys you most. We talk through what&rsquo;s automatable, what it&rsquo;s roughly worth, and whether this is a fit, in both directions.</p>
+                            <p class="text-xs text-slate-500"><strong>You leave with:</strong> an honest fit assessment, either way.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-5 items-start relative">
+                        <div class="shrink-0 w-14 h-14 rounded-full bg-brand-dark flex items-center justify-center text-brand-accent font-bold text-lg z-10">2</div>
+                        <div class="flex-1 bg-slate-50 rounded-xl border border-slate-200 p-6">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                                <h3 class="text-lg font-bold text-brand-dark">Map</h3>
+                                <span class="inline-block text-xs font-medium text-slate-500 bg-white px-3 py-1 rounded-full uppercase tracking-wider border border-slate-200">2&ndash;3 weeks</span>
+                            </div>
+                            <p class="text-slate-600 text-sm mb-3">The Automation Audit: shadow how work actually flows through your firm, inventory the manual steps, score effort against impact, and attach dollar values to each candidate.</p>
+                            <p class="text-xs text-slate-500"><strong>You leave with:</strong> a ranked automation roadmap with the math shown.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-5 items-start relative">
+                        <div class="shrink-0 w-14 h-14 rounded-full bg-brand-dark flex items-center justify-center text-brand-accent font-bold text-lg z-10">3</div>
+                        <div class="flex-1 bg-slate-50 rounded-xl border border-slate-200 p-6">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                                <h3 class="text-lg font-bold text-brand-dark">Build</h3>
+                                <span class="inline-block text-xs font-medium text-slate-500 bg-white px-3 py-1 rounded-full uppercase tracking-wider border border-slate-200">Implementation</span>
+                            </div>
+                            <p class="text-slate-600 text-sm mb-3">Success criteria go in writing first: hours saved, turnaround time, error rate. Then the top automation gets built into your real tools and run on real client work.</p>
+                            <p class="text-xs text-slate-500"><strong>You leave with:</strong> a working automation and live data on how it performs.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-5 items-start relative">
+                        <div class="shrink-0 w-14 h-14 rounded-full bg-brand-dark flex items-center justify-center text-brand-accent font-bold text-lg z-10">4</div>
+                        <div class="flex-1 bg-slate-50 rounded-xl border border-slate-200 p-6">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                                <h3 class="text-lg font-bold text-brand-dark">Prove</h3>
+                                <span class="inline-block text-xs font-medium text-slate-500 bg-white px-3 py-1 rounded-full uppercase tracking-wider border border-slate-200">The gate</span>
+                            </div>
+                            <p class="text-slate-600 text-sm mb-3">We read the scorecard together, against the criteria from day one. Pass means scale it. Miss means you stop, keep the build and the documentation, and know exactly why.</p>
+                            <p class="text-xs text-slate-500"><strong>You leave with:</strong> a go/no-go decision backed by evidence, not enthusiasm.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-5 items-start relative">
+                        <div class="shrink-0 w-14 h-14 rounded-full bg-brand-dark flex items-center justify-center text-brand-accent font-bold text-lg z-10">5</div>
+                        <div class="flex-1 bg-slate-50 rounded-xl border border-slate-200 p-6">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                                <h3 class="text-lg font-bold text-brand-dark">Compound</h3>
+                                <span class="inline-block text-xs font-medium text-slate-500 bg-white px-3 py-1 rounded-full uppercase tracking-wider border border-slate-200">Ongoing</span>
+                            </div>
+                            <p class="text-slate-600 text-sm mb-3">Roll out to the whole firm, train your people, document everything. Then repeat: each new automation goes through the same audit-and-prove gauntlet before it earns a permanent place.</p>
+                            <p class="text-xs text-slate-500"><strong>You leave with:</strong> a growing set of proven systems your firm owns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AUTOMATION LIBRARY -->
+    <section id="automations" class="scroll-mt-24 py-16 bg-slate-50 border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-10">
+                <p class="text-emerald-600 font-medium text-sm uppercase tracking-widest mb-4">Automation Library</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">What Actually Gets Built for Firms</h2>
+                <p class="text-slate-600 text-lg max-w-2xl mx-auto">A sampler of high-payback automations by area of the practice. Every build is tailored to your tools and your workflow. This is the menu, not the meal.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl border border-slate-200 p-8">
+                    <h3 class="text-xl font-bold text-brand-dark mb-5 flex items-center gap-3">
+                        <span class="w-9 h-9 bg-brand-accent/10 rounded-lg flex items-center justify-center shrink-0"><svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"/></svg></span>
+                        Intake &amp; Onboarding
+                    </h3>
+                    <ul class="space-y-4 text-sm text-slate-600">
+                        <li><strong class="text-brand-dark block mb-0.5">Client intake orchestration</strong>One intake form feeds every downstream system: matter or engagement setup, folders, conflict or screening checks queued, kickoff scheduled. No re-keying.</li>
+                        <li><strong class="text-brand-dark block mb-0.5">Engagement letters &amp; proposals</strong>First drafts generated from intake data and your own precedents. Partners review and sign instead of assembling from scratch.</li>
+                        <li><strong class="text-brand-dark block mb-0.5">Document collection chasing</strong>Clients get a checklist and polite automated reminders until everything arrives. Your staff stops playing fetch.</li>
+                        <li><strong class="text-brand-dark block mb-0.5">New-client screening</strong>Inbound inquiries checked against your fit criteria and flagged for review, with a drafted response either way.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl border border-slate-200 p-8">
+                    <h3 class="text-xl font-bold text-brand-dark mb-5 flex items-center gap-3">
+                        <span class="w-9 h-9 bg-brand-accent/10 rounded-lg flex items-center justify-center shrink-0"><svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></span>
+                        Documents &amp; Drafting
+                    </h3>
+                    <ul class="space-y-4 text-sm text-slate-600">
+                        <li><strong class="text-brand-dark block mb-0.5">Document intake &amp; filing</strong>Inbound documents read, classified, named by your conventions, and filed to the right matter or engagement, with exceptions queued for a person.</li>
+                        <li><strong class="text-brand-dark block mb-0.5">Review prep summaries</strong>Long documents summarized against what you actually need to check, so review starts at page one with a map.</li>
+                        <li><strong class="text-brand-dark block mb-0.5">First-draft generation</strong>Routine drafting grounded in your firm&rsquo;s own templates and precedents, never a public chatbot&rsquo;s guess.</li>
+                        <li><strong class="text-brand-dark block mb-0.5">Version &amp; deadline tracking</strong>Key dates extracted on arrival and tracked automatically, with reminders that escalate.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl border border-slate-200 p-8">
+                    <h3 class="text-xl font-bold text-brand-dark mb-5 flex items-center gap-3">
+                        <span class="w-9 h-9 bg-brand-accent/10 rounded-lg flex items-center justify-center shrink-0"><svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg></span>
+                        Billing &amp; Collections
+                    </h3>
+                    <ul class="space-y-4 text-sm text-slate-600">
+                        <li><strong class="text-brand-dark block mb-0.5">Time &amp; WIP capture</strong>Work activity turned into draft time entries and WIP visibility, so billing stops depending on Friday memory.</li>
+                        <li><strong class="text-brand-dark block mb-0.5">Invoice drafting</strong>Bills assembled from captured time and firm rates, queued for partner approval. Billing day shrinks from days to an hour.</li>
+                        <li><strong class="text-brand-dark block mb-0.5">Collections follow-up</strong>Overdue invoices chased with polite, escalating sequences in your voice. Partners only handle the conversations that need them.</li>
+                        <li><strong class="text-brand-dark block mb-0.5">Trust &amp; retainer alerts</strong>Balances monitored with replenishment requests drafted before work outruns the retainer.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl border border-slate-200 p-8">
+                    <h3 class="text-xl font-bold text-brand-dark mb-5 flex items-center gap-3">
+                        <span class="w-9 h-9 bg-brand-accent/10 rounded-lg flex items-center justify-center shrink-0"><svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg></span>
+                        Client Communication
+                    </h3>
+                    <ul class="space-y-4 text-sm text-slate-600">
+                        <li><strong class="text-brand-dark block mb-0.5">Client status reporting</strong>&ldquo;Where do things stand?&rdquo; answered before it&rsquo;s asked: status updates drafted from matter activity on a schedule you set.</li>
+                        <li><strong class="text-brand-dark block mb-0.5">Email triage</strong>The shared inbox classified, routed, and answered in draft, grounded in your firm&rsquo;s knowledge. Nothing sits unanswered over a weekend.</li>
+                        <li><strong class="text-brand-dark block mb-0.5">Scheduling &amp; follow-ups</strong>Meeting requests, confirmations, reschedules, and post-meeting follow-up notes handled without inbox ping-pong.</li>
+                        <li><strong class="text-brand-dark block mb-0.5">Meeting prep briefs</strong>Client history, open items, and recent activity compiled before every meeting, so nobody walks in cold.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="scroll-mt-24 py-16 bg-white border-b border-slate-100">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-10">
+                <p class="text-emerald-600 font-medium text-sm uppercase tracking-widest mb-4">FAQ</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">Fair Questions, Straight Answers</h2>
+            </div>
+            <div class="space-y-4">
+                <details class="bg-slate-50 rounded-xl border border-slate-200 p-6 group">
+                    <summary class="font-bold text-brand-dark cursor-pointer list-none flex justify-between items-center">How do you handle our client data? Some of it is privileged or confidential.<span class="text-emerald-500 group-open:rotate-45 transition-transform text-xl leading-none">+</span></summary>
+                    <p class="text-slate-600 text-sm leading-relaxed mt-4">Head-on, in writing, before anything is built. Every engagement includes a data-handling appendix that states exactly what data each automation touches, where it is processed, what leaves your systems (often nothing), and which AI providers see it under what terms, including no-training commitments. Where the work is sensitive, builds run inside your own accounts and tenants rather than mine. I spent years walking enterprise security teams through exactly these reviews. If your malpractice carrier or bar rules impose requirements, we design to them, and if a workflow can&rsquo;t be done safely within them, I&rsquo;ll say so at the audit stage instead of finding out later.</p>
+                </details>
+                <details class="bg-slate-50 rounded-xl border border-slate-200 p-6 group">
+                    <summary class="font-bold text-brand-dark cursor-pointer list-none flex justify-between items-center">What happens if the build misses its success criteria?<span class="text-emerald-500 group-open:rotate-45 transition-transform text-xl leading-none">+</span></summary>
+                    <p class="text-slate-600 text-sm leading-relaxed mt-4">You stop, and you keep everything: the working build as far as it got, all documentation, and a written analysis of why it missed. No renegotiation, no &ldquo;iteration is part of the journey.&rdquo; The criteria exist precisely so this moment is a decision, not an argument. And if I don&rsquo;t believe a build can pass, I&rsquo;ll tell you at the audit stage and we won&rsquo;t start one.</p>
+                </details>
+                <details class="bg-slate-50 rounded-xl border border-slate-200 p-6 group">
+                    <summary class="font-bold text-brand-dark cursor-pointer list-none flex justify-between items-center">Who owns the automations afterward?<span class="text-emerald-500 group-open:rotate-45 transition-transform text-xl leading-none">+</span></summary>
+                    <p class="text-slate-600 text-sm leading-relaxed mt-4">Your firm does. Everything runs in accounts you control, with documentation, credentials, and runbooks handed over as part of the engagement. There is no proprietary platform you rent from me and no dependency designed to keep you paying. If you never call me again, everything keeps working and your team knows how to run it. That&rsquo;s deliberate: the Advisory tier exists for firms that want ongoing help, not as a hostage arrangement.</p>
+                </details>
+                <details class="bg-slate-50 rounded-xl border border-slate-200 p-6 group">
+                    <summary class="font-bold text-brand-dark cursor-pointer list-none flex justify-between items-center">Which tools do you build with?<span class="text-emerald-500 group-open:rotate-45 transition-transform text-xl leading-none">+</span></summary>
+                    <p class="text-slate-600 text-sm leading-relaxed mt-4">Whatever the problem actually needs, which is a real answer, not a dodge. Usually that means connecting the tools you already run (practice management, document management, email, accounting) with workflow platforms like Zapier, Make, or n8n, plus AI models for the reading, drafting, and summarizing steps. Sometimes it&rsquo;s custom code against your systems&rsquo; APIs. I&rsquo;m not a reseller for any platform, so the recommendation is never shaped by a commission.</p>
+                </details>
+                <details class="bg-slate-50 rounded-xl border border-slate-200 p-6 group">
+                    <summary class="font-bold text-brand-dark cursor-pointer list-none flex justify-between items-center">Do we need clean data or documented processes first?<span class="text-emerald-500 group-open:rotate-45 transition-transform text-xl leading-none">+</span></summary>
+                    <p class="text-slate-600 text-sm leading-relaxed mt-4">No. Almost no firm has them, and waiting for them is how automation stays a someday-project forever. The audit works from how things actually run, including the messy parts and the process that lives in your office manager&rsquo;s head. Clean documentation is an output of this work, not a prerequisite for it.</p>
+                </details>
+                <details class="bg-slate-50 rounded-xl border border-slate-200 p-6 group">
+                    <summary class="font-bold text-brand-dark cursor-pointer list-none flex justify-between items-center">Is this going to replace our staff?<span class="text-emerald-500 group-open:rotate-45 transition-transform text-xl leading-none">+</span></summary>
+                    <p class="text-slate-600 text-sm leading-relaxed mt-4">In practice it replaces the worst parts of their jobs: the re-keying, the chasing, the assembling. Firms I work with aren&rsquo;t trying to shrink. They&rsquo;re trying to grow without every new client adding admin overhead, and to point their best people at billable, judgment-heavy work. Your paralegal or practice manager usually becomes the automation&rsquo;s operator, not its casualty.</p>
+                </details>
+                <details class="bg-slate-50 rounded-xl border border-slate-200 p-6 group">
+                    <summary class="font-bold text-brand-dark cursor-pointer list-none flex justify-between items-center">You only take one engagement at a time. What if you're busy?<span class="text-emerald-500 group-open:rotate-45 transition-transform text-xl leading-none">+</span></summary>
+                    <p class="text-slate-600 text-sm leading-relaxed mt-4">Then you get a start date, in writing, before you commit to anything. Audits and advisory can overlap with an active build; implementations queue one at a time. The tradeoff is real and I&rsquo;ve chosen it deliberately: you get a senior operator&rsquo;s full attention and a finish line, instead of an agency&rsquo;s junior bench and an open-ended timeline.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- END-OF-PAGE CTA -->
+    <section class="hero-pattern text-white py-24">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Not Sure Where You&rsquo;d Start? That&rsquo;s What the Assessment Is For.</h2>
+            <p class="text-slate-300 text-lg mb-8 leading-relaxed">
+                Ten questions about how your firm runs: intake, drafting, billing, reporting. Two minutes. You&rsquo;ll see which band your firm falls in and which engagement fits.
+            </p>
+            <div class="flex flex-col items-center gap-4">
+                <a href="assessment.html" data-cta="Take the Free Assessment" class="cta px-10 py-4 bg-brand-accent text-brand-dark font-bold rounded-lg hover:bg-white transition text-center">Take the Free Readiness Assessment</a>
+                <p class="text-sm text-slate-400">Ready to talk now? <a href="contact.html" class="text-brand-accent hover:underline">Get in touch</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <span class="text-white font-display font-bold text-lg block mb-3">Solutions Advisory<span class="text-brand-accent">&check;</span></span>
+                    <p class="text-sm">AI automation for professional-services firms, proven before it scales.</p>
+                    <p class="text-sm mt-2">New York, NY &middot; Serving firms nationwide</p>
+                </div>
+                <div>
+                    <p class="text-xs font-semibold text-slate-300 uppercase tracking-wider mb-3">Explore</p>
+                    <div class="space-y-2 text-sm">
+                        <a href="services.html" class="block hover:text-brand-accent transition">Services</a>
+                        <a href="services.html#automations" class="block hover:text-brand-accent transition">Automation Library</a>
+                        <a href="about.html" class="block hover:text-brand-accent transition">About</a>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-xs font-semibold text-slate-300 uppercase tracking-wider mb-3">Resources</p>
+                    <div class="space-y-2 text-sm">
+                        <a href="insights.html" class="block hover:text-brand-accent transition">Insights</a>
+                        <a href="assessment.html" class="block hover:text-brand-accent transition">Readiness Assessment</a>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-xs font-semibold text-slate-300 uppercase tracking-wider mb-3">Connect</p>
+                    <div class="space-y-2 text-sm">
+                        <a href="contact.html" class="block hover:text-brand-accent transition">Contact</a>
+                        <a href="https://www.linkedin.com/company/solutions-engineering-advisory/" target="_blank" rel="noopener noreferrer" class="block hover:text-brand-accent transition">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                <span>&copy; 2026 Solutions Advisory Partners. All rights reserved.</span>
+                <a href="privacy.html" class="hover:text-brand-accent transition">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
