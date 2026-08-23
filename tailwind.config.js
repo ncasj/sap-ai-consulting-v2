@@ -3,11 +3,24 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        display: ['Space Grotesk', 'sans-serif'],
+        sans: ['Public Sans', 'sans-serif'],
+        display: ['Fraunces', 'serif'],
       },
       colors: {
-        brand: { dark: '#0b1120', accent: '#34d399', light: '#f8fafc' },
+        brand: {
+          ink: '#17233F',
+          inkHover: '#0F1830',
+          paper: '#F1EAD9',
+          paperMuted: '#EAE1CC',
+          card: '#FBF8F1',
+          brass: '#A9823C',
+          rule: '#E4DCC6',
+          muted: '#71695A',
+          text: '#2E2B22',
+          positive: '#4B6858',
+          caution: '#8C7A4A',
+          negative: '#9B5A45',
+        },
       },
     },
   },

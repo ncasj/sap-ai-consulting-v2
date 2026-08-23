@@ -9,11 +9,11 @@
     <meta name="description" content="Enterprise buyers never take a vendor's word. They demand proof on their own data before committing. Your firm should buy AI the same way. The playbook, from someone who ran those evaluations for ten years.">
     <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
     <link rel="stylesheet" href="../assets/tailwind.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
-        .hero-pattern { background-color: #0b1120; background-image: radial-gradient(#1c2941 1px, transparent 1px); background-size: 22px 22px; }
+        body { font-family: 'Public Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Fraunces', serif; }
+        .hero-pattern { background-color: #17233F; background-image: repeating-linear-gradient(to bottom, rgba(169,130,60,0.07) 0px, rgba(169,130,60,0.07) 1px, transparent 1px, transparent 40px); }
         article p { margin-bottom: 1.5rem; }
         article h2 { margin-top: 2.5rem; margin-bottom: 1rem; }
     </style>
@@ -26,33 +26,36 @@
     <meta property="og:image" content="https://www.solutionsadvisorypartners.com/assets/og-default.png">
     <meta name="twitter:card" content="summary_large_image">
 </head>
-<body class="bg-brand-light text-slate-800 antialiased">
+<body class="bg-brand-paper text-brand-text antialiased">
 
-    <nav class="fixed w-full z-50 bg-brand-light/90 backdrop-blur-md border-b border-slate-200">
+    <nav class="fixed w-full z-50 bg-brand-paper/90 backdrop-blur-md border-b border-brand-rule">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="../index.html" class="flex items-center gap-2 text-xl md:text-2xl font-display font-bold text-brand-dark tracking-tight">
-                <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="6" fill="#0b1120"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#34d399" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Solutions Advisory
+            <a href="../index.html" class="flex items-center gap-3 text-brand-ink">
+                <svg class="w-8 h-8 shrink-0" viewBox="0 0 72 72" fill="none" aria-hidden="true"><rect width="72" height="72" rx="14" fill="#17233F"/><path d="M23 47 L23 25 Q23 20 36 20" stroke="#A9823C" stroke-width="4" stroke-linecap="round"/><path d="M49 25 L49 47 Q49 52 36 52" stroke="#A9823C" stroke-width="4" stroke-linecap="round" opacity="0.55"/></svg>
+                <span class="leading-tight">
+                    <span class="block font-display text-lg md:text-xl font-medium tracking-tight">Solutions Advisory Partners</span>
+                    <span class="block text-[10px] font-semibold uppercase tracking-[0.14em] text-brand-brass mt-0.5">AI Automation Advisory</span>
+                </span>
             </a>
-            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
-                <a href="../services.html" class="hover:text-emerald-600 transition">Services</a>
-                <a href="../about.html" class="hover:text-emerald-600 transition">About</a>
-                <a href="../assessment.html" class="hover:text-emerald-600 transition">Assessment</a>
-                <a href="../insights.html" class="text-emerald-600 font-semibold">Insights</a>
-                <a href="../contact.html" class="px-5 py-2 bg-brand-dark text-white rounded-full hover:bg-slate-700 transition">Contact</a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-brand-text">
+                <a href="../services.html" class="hover:text-brand-brass transition">Services</a>
+                <a href="../about.html" class="hover:text-brand-brass transition">About</a>
+                <a href="../assessment.html" class="hover:text-brand-brass transition">Assessment</a>
+                <a href="../insights.html" class="text-brand-brass font-semibold">Insights</a>
+                <a href="../contact.html" class="px-5 py-2 bg-brand-ink text-brand-paper rounded-full hover:bg-brand-inkHover transition">Contact</a>
             </div>
-            <button id="mobileMenuBtn" class="md:hidden p-2 text-slate-600 hover:text-emerald-600 transition" aria-label="Toggle menu" aria-expanded="false">
+            <button id="mobileMenuBtn" class="md:hidden p-2 text-brand-text hover:text-brand-brass transition" aria-label="Toggle menu" aria-expanded="false">
                 <svg id="iconHam" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
                 <svg id="iconX" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
             </button>
         </div>
-        <div id="mobileMenu" class="hidden md:hidden border-t border-slate-200">
+        <div id="mobileMenu" class="hidden md:hidden border-t border-brand-rule">
             <div class="px-6 py-4 flex flex-col space-y-1">
-                <a href="../services.html" class="block px-3 py-3 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100 transition">Services</a>
-                <a href="../about.html" class="block px-3 py-3 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100 transition">About</a>
-                <a href="../assessment.html" class="block px-3 py-3 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100 transition">Assessment</a>
-                <a href="../insights.html" class="block px-3 py-3 rounded-lg text-base font-medium text-emerald-600 hover:bg-slate-100 transition">Insights</a>
-                <a href="../contact.html" class="block mt-2 px-3 py-3 bg-brand-dark text-white text-base font-bold text-center rounded-lg hover:bg-slate-700 transition">Contact</a>
+                <a href="../services.html" class="block px-3 py-3 rounded-lg text-base font-medium text-brand-text hover:bg-brand-paperMuted transition">Services</a>
+                <a href="../about.html" class="block px-3 py-3 rounded-lg text-base font-medium text-brand-text hover:bg-brand-paperMuted transition">About</a>
+                <a href="../assessment.html" class="block px-3 py-3 rounded-lg text-base font-medium text-brand-text hover:bg-brand-paperMuted transition">Assessment</a>
+                <a href="../insights.html" class="block px-3 py-3 rounded-lg text-base font-medium text-brand-brass hover:bg-brand-paperMuted transition">Insights</a>
+                <a href="../contact.html" class="block mt-2 px-3 py-3 bg-brand-ink text-brand-paper text-base font-bold text-center rounded-lg hover:bg-brand-inkHover transition">Contact</a>
             </div>
         </div>
     </nav>
@@ -60,60 +63,60 @@
     (function(){var b=document.getElementById('mobileMenuBtn'),m=document.getElementById('mobileMenu'),h=document.getElementById('iconHam'),x=document.getElementById('iconX');if(!b||!m)return;b.addEventListener('click',function(){m.classList.toggle('hidden');h.classList.toggle('hidden');x.classList.toggle('hidden');b.setAttribute('aria-expanded',m.classList.contains('hidden')?'false':'true');});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.add('hidden');h.classList.remove('hidden');x.classList.add('hidden');b.setAttribute('aria-expanded','false');});});})();
     </script>
 
-    <header class="hero-pattern text-white py-20 pt-36">
+    <header class="hero-pattern text-brand-paper py-20 pt-36">
         <div class="max-w-3xl mx-auto px-6">
-            <a href="../insights.html" class="text-brand-accent text-sm font-semibold hover:underline">&larr; All insights</a>
-            <div class="mt-6 mb-4"><span class="inline-block text-xs font-semibold px-2.5 py-1 bg-brand-accent/20 text-brand-accent rounded-full">Buying AI</span></div>
+            <a href="../insights.html" class="text-brand-brass text-sm font-semibold hover:underline">&larr; All insights</a>
+            <div class="mt-6 mb-4"><span class="inline-block text-xs font-semibold px-2.5 py-1 bg-brand-brass/20 text-brand-brass rounded-full">Buying AI</span></div>
             <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-6">The Firm Owner&rsquo;s Guide to Buying AI</h1>
-            <p class="text-slate-400 text-sm">By Nico Castagnola &middot; August 2026 &middot; 6 min read</p>
+            <p class="text-brand-muted text-sm">By Nico Castagnola &middot; August 2026 &middot; 6 min read</p>
         </div>
     </header>
 
-    <article class="py-16 bg-white">
-        <div class="max-w-3xl mx-auto px-6 text-slate-700 text-lg leading-relaxed">
+    <article class="py-16 bg-brand-card">
+        <div class="max-w-3xl mx-auto px-6 text-brand-text text-lg leading-relaxed">
             <p>For ten years, my job has been standing in front of skeptical buyers while they decided whether my company&rsquo;s software was real. Not whether the demo was impressive. Demos are always impressive; that&rsquo;s what demos are for. Whether it was real: on their data, in their environment, at their volume, handled by their people.</p>
             <p>The mechanism enterprises use to answer that question is the proof of concept. Before a serious buyer commits serious money, they make the vendor prove the product on a slice of the buyer&rsquo;s actual problem, against criteria written down in advance, on a clock. I&rsquo;ve run hundreds of these evaluations from the vendor side. I have watched deals die because a product that demoed beautifully couldn&rsquo;t survive contact with real documents, real edge cases, real Tuesdays.</p>
-            <p>Here is what strikes me now, watching law and accounting firms get pitched AI: <strong class="text-brand-dark">almost nobody makes AI vendors and consultants earn it the way enterprise buyers made us earn it.</strong> The typical pitch starts with a vision deck and a retainer, and ends, months later, with something that quietly doesn&rsquo;t get used. The failure usually isn&rsquo;t the technology. It&rsquo;s the buying process.</p>
+            <p>Here is what strikes me now, watching law and accounting firms get pitched AI: <strong class="text-brand-ink">almost nobody makes AI vendors and consultants earn it the way enterprise buyers made us earn it.</strong> The typical pitch starts with a vision deck and a retainer, and ends, months later, with something that quietly doesn&rsquo;t get used. The failure usually isn&rsquo;t the technology. It&rsquo;s the buying process.</p>
 
-            <h2 class="text-2xl md:text-3xl font-bold text-brand-dark">What the proof discipline actually is</h2>
+            <h2 class="text-2xl md:text-3xl font-bold text-brand-ink">What the proof discipline actually is</h2>
             <p>Strip away the enterprise procurement theater and a good evaluation has four parts:</p>
-            <p><strong class="text-brand-dark">1. Success criteria, in writing, before anything is built.</strong> Not &ldquo;we&rsquo;ll know it when we see it.&rdquo; Numbers: an engagement letter takes 45 minutes to produce today; the automation must get a reviewable draft under 5, with zero stale client details surviving from the template. If a seller can&rsquo;t write the criteria, they don&rsquo;t understand your process yet. That&rsquo;s worth learning before money moves.</p>
-            <p><strong class="text-brand-dark">2. Real work, not demo data.</strong> Every product works on the demo dataset. The demo dataset was chosen because the product works on it. The only test that matters runs on your actual intake, your inconsistent client documents, your exceptions.</p>
-            <p><strong class="text-brand-dark">3. A clock.</strong> Open-ended evaluations don&rsquo;t conclude; they dissolve. Thirty to forty-five days proves almost any well-scoped automation. If someone needs six months to show value, the scope is wrong.</p>
-            <p><strong class="text-brand-dark">4. A decision rule.</strong> Pass means scale. Miss means stop. Agreed in advance, so nobody relitigates it under the influence of sunk costs and enthusiasm.</p>
+            <p><strong class="text-brand-ink">1. Success criteria, in writing, before anything is built.</strong> Not &ldquo;we&rsquo;ll know it when we see it.&rdquo; Numbers: an engagement letter takes 45 minutes to produce today; the automation must get a reviewable draft under 5, with zero stale client details surviving from the template. If a seller can&rsquo;t write the criteria, they don&rsquo;t understand your process yet. That&rsquo;s worth learning before money moves.</p>
+            <p><strong class="text-brand-ink">2. Real work, not demo data.</strong> Every product works on the demo dataset. The demo dataset was chosen because the product works on it. The only test that matters runs on your actual intake, your inconsistent client documents, your exceptions.</p>
+            <p><strong class="text-brand-ink">3. A clock.</strong> Open-ended evaluations don&rsquo;t conclude; they dissolve. Thirty to forty-five days proves almost any well-scoped automation. If someone needs six months to show value, the scope is wrong.</p>
+            <p><strong class="text-brand-ink">4. A decision rule.</strong> Pass means scale. Miss means stop. Agreed in advance, so nobody relitigates it under the influence of sunk costs and enthusiasm.</p>
 
-            <h2 class="text-2xl md:text-3xl font-bold text-brand-dark">Why AI sellers avoid this structure</h2>
+            <h2 class="text-2xl md:text-3xl font-bold text-brand-ink">Why AI sellers avoid this structure</h2>
             <p>Because it&rsquo;s bad for them and good for you. A consultant paid monthly to &ldquo;drive AI transformation&rdquo; has no incentive to reach a pass/fail moment; the ambiguity is the business model. A structure with written criteria and a scheduled verdict transfers risk from the buyer to the seller. That&rsquo;s exactly why you should insist on it, and why a seller&rsquo;s reaction to the request is itself a signal. The ones who flinch were planning to sell you confidence. The ones who say &ldquo;great, here&rsquo;s how I&rsquo;d structure the criteria&rdquo; have done this before.</p>
 
-            <h2 class="text-2xl md:text-3xl font-bold text-brand-dark">Five questions to ask anyone selling your firm AI</h2>
+            <h2 class="text-2xl md:text-3xl font-bold text-brand-ink">Five questions to ask anyone selling your firm AI</h2>
             <p>You don&rsquo;t need to be technical to run this gauntlet. Ask these, and listen for numbers in the answers:</p>
-            <p><strong class="text-brand-dark">&ldquo;What will we measure, and what&rsquo;s the baseline today?&rdquo;</strong> If they haven&rsquo;t asked to watch your current process, they can&rsquo;t answer honestly.</p>
-            <p><strong class="text-brand-dark">&ldquo;What happens if it misses the criteria?&rdquo;</strong> The right answer involves you stopping, keeping the work products, and understanding why. The wrong answer is a pivot to how iteration is part of the journey.</p>
-            <p><strong class="text-brand-dark">&ldquo;Will it run on our real client work during the evaluation?&rdquo;</strong> An evaluation on sample data is a demo with a longer invoice.</p>
-            <p><strong class="text-brand-dark">&ldquo;Where does our client data go?&rdquo;</strong> You are entitled to a written answer naming what data the system touches, where it is processed, what leaves your systems, and which AI providers see it under what terms. For a firm bound by privilege or professional confidentiality, a hand-wave here ends the conversation.</p>
-            <p><strong class="text-brand-dark">&ldquo;Who maintains this in month six?&rdquo;</strong> Automations aren&rsquo;t paintings; they&rsquo;re plumbing. Document formats drift, tools change, volume grows. Someone must own that, in writing.</p>
+            <p><strong class="text-brand-ink">&ldquo;What will we measure, and what&rsquo;s the baseline today?&rdquo;</strong> If they haven&rsquo;t asked to watch your current process, they can&rsquo;t answer honestly.</p>
+            <p><strong class="text-brand-ink">&ldquo;What happens if it misses the criteria?&rdquo;</strong> The right answer involves you stopping, keeping the work products, and understanding why. The wrong answer is a pivot to how iteration is part of the journey.</p>
+            <p><strong class="text-brand-ink">&ldquo;Will it run on our real client work during the evaluation?&rdquo;</strong> An evaluation on sample data is a demo with a longer invoice.</p>
+            <p><strong class="text-brand-ink">&ldquo;Where does our client data go?&rdquo;</strong> You are entitled to a written answer naming what data the system touches, where it is processed, what leaves your systems, and which AI providers see it under what terms. For a firm bound by privilege or professional confidentiality, a hand-wave here ends the conversation.</p>
+            <p><strong class="text-brand-ink">&ldquo;Who maintains this in month six?&rdquo;</strong> Automations aren&rsquo;t paintings; they&rsquo;re plumbing. Document formats drift, tools change, volume grows. Someone must own that, in writing.</p>
 
-            <h2 class="text-2xl md:text-3xl font-bold text-brand-dark">The part nobody tells you: a failed pilot is a win</h2>
+            <h2 class="text-2xl md:text-3xl font-bold text-brand-ink">The part nobody tells you: a failed pilot is a win</h2>
             <p>In enterprise evaluations, a proof of concept that fails fast is a success. It just saved the buyer a seven-figure mistake at a five-figure price. The same math holds at firm scale. A 30-day build that proves your intake process isn&rsquo;t ready for automation (usually because the upstream information is chaos) is cheap tuition, and it tells you exactly what to fix first. The expensive version of that lesson is the same discovery in month eight of a retainer.</p>
-            <p>The AI wave is real, and professional-services work, which is mostly documents, deadlines, and correspondence, is unusually well suited to it. But real technology deserves a real buying process. Demand proof. The sellers worth hiring will thank you for it.</p>
+            <p>The AI wave is real, and professional services work, which is mostly documents, deadlines, and correspondence, is unusually well suited to it. But real technology deserves a real buying process. Demand proof. The sellers worth hiring will thank you for it.</p>
         </div>
     </article>
 
-    <section class="py-12 bg-slate-50 border-t border-slate-100">
+    <section class="py-12 bg-brand-paperMuted border-t border-brand-rule">
         <div class="max-w-3xl mx-auto px-6 text-center">
-            <h2 class="text-2xl md:text-3xl font-bold text-brand-dark mb-4">This is how I structure every engagement</h2>
-            <p class="text-slate-600 mb-8 max-w-xl mx-auto">Written success criteria, real client work, a scheduled verdict, and your call at the end. That&rsquo;s the standard, because I spent a decade on the other side of it.</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-brand-ink mb-4">This is how I structure every engagement</h2>
+            <p class="text-brand-text mb-8 max-w-xl mx-auto">Written success criteria, real client work, a scheduled verdict, and your call at the end. That&rsquo;s the standard, because I spent a decade on the other side of it.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="../assessment.html" class="px-8 py-3.5 bg-brand-dark text-white font-bold rounded-lg hover:bg-slate-800 transition">Take the Free Assessment</a>
-                <a href="../services.html#method" class="px-8 py-3.5 border border-slate-300 text-slate-700 font-bold rounded-lg hover:border-brand-accent hover:text-emerald-600 transition">See the Method</a>
+                <a href="../assessment.html" class="px-8 py-3.5 bg-brand-ink text-brand-paper font-bold rounded-lg hover:bg-brand-inkHover transition">Take the Free Assessment</a>
+                <a href="../services.html#method" class="px-8 py-3.5 border border-brand-rule text-brand-text font-bold rounded-lg hover:border-brand-brass hover:text-brand-brass transition">See the Method</a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-brand-dark text-slate-400 py-8 border-t border-slate-800">
+    <footer class="bg-brand-ink text-brand-muted py-8 border-t border-brand-paper/10">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
             <span>&copy; 2026 Solutions Advisory Partners. All rights reserved.</span>
-            <a href="../privacy.html" class="hover:text-brand-accent transition">Privacy Policy</a>
+            <a href="../privacy.html" class="hover:text-brand-brass transition">Privacy Policy</a>
         </div>
     </footer>
 </body>

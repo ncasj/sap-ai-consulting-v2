@@ -39,16 +39,21 @@ repo to this one.
 - Voice: no em dashes anywhere in site copy; en dashes retained for numeric ranges
 - Wordmark: "Solutions Advisory" + check mark; full name in footer/copyright
 
+## Update 2026-08-23: Ledger rebrand
+
+The palette/font open item below is resolved. The site now runs the "Ledger" identity
+(navy/parchment/brass, Fraunces + Public Sans, the Open Ledger mark) per
+`SAP-v2-brand-spec.md`. Full implementation record: `BRAND.md`. `CLAUDE.md` at the repo
+root has the fast-reference version for future sessions working in this repo.
+
+Also folded into this pass: a full copy sweep for AI-tell language and reflexive compound
+hyphenation (see `BRAND.md` → Voice), run against the `humanizer` skill's checklist and
+Nico's Idiolect voice profile (direct, low formality, short sentences, no em dashes).
+
 ## Open items (from brief §10, Nico's actions)
 
 1. **Employment agreement check before launch.** The site names Gen Digital on the home
    and about pages. If the agreement check fails, search for "Gen Digital" across
    index.html and about.html and soften to "a large software company."
-2. **Palette.** Kept the v2 palette (ink #0b1120 / emerald #34d399 / Space Grotesk +
-   Inter) as the brief allows. To revert to v1 colors: edit `tailwind.config.js`
-   (brand.dark #0f172a, brand.accent #38bdf8), swap the Google Fonts links and the
-   `<style>` blocks' font-family + hero-pattern colors in each page head, rebuild CSS
-   (`npx tailwindcss@3 -c tailwind.config.js -i input.css -o assets/tailwind.css
-   --minify`), and regenerate the OG image (`node scripts/og.mjs`).
-3. **Confirm price ranges** in §4 of the brief before launch; they are currently
+2. **Confirm price ranges** in §4 of the brief before launch; they are currently
    rendered on index.html and services.html.

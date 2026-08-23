@@ -116,7 +116,7 @@ This is the **only** channel. Honest expectations, agreed in the ideation sessio
 **Reverse from the branch:**
 - All Proofworks naming → Solutions Advisory Partners, sitewide. Domain stays solutionsadvisorypartners.com.
 - Delete the migration machinery: domain purchase, new Cloudflare Pages project, Search Console change-of-address, LinkedIn company rename, repo spin-out. None of it applies.
-- Palette and fonts: Nico's call, low stakes. The new palette may stay if he likes it; it is not tied to the dead name.
+- Palette and fonts: **decided, see `SAP-v2-brand-spec.md`** — the Ledger direction (ink navy, parchment, brass, Fraunces + Public Sans), the "Open Ledger" mark, and an "AI Automation Advisory" subname under the wordmark. That doc is the full implementation spec (color tokens, SVG source for the mark, header lockup) — read it alongside this brief before touching any site styling.
 
 **Rewrite for the new ICP:**
 - **Home:** hero = positioning statement (§2). A who-this-is-for strip naming the verticals. The method. The offer ladder with price ranges. Founder proof block naming Gen. Single CTA: the assessment.
@@ -147,5 +147,6 @@ This is the **only** channel. Honest expectations, agreed in the ideation sessio
 ## 10. Open items for Nico
 
 1. Skim the Gen employment agreement for moonlighting / conflict-of-interest / IP-assignment language **before** the site names Gen. One sentence of diligence versus walking back the homepage.
-2. Decide palette: keep the new one from the branch or revert to old SAP colors.
-3. Confirm the price ranges in §4 before they go on the site.
+2. Confirm the price ranges in §4 before they go on the site.
+
+~~Decide palette~~ — resolved 2026-08-23: Ledger direction, Open Ledger mark, "AI Automation Advisory" subname. See `SAP-v2-brand-spec.md`.

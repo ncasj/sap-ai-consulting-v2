@@ -1,3 +1,18 @@
+:root {
+  --ink: #17233F;
+  --ink-hover: #0F1830;
+  --paper: #F1EAD9;
+  --paper-muted: #EAE1CC;
+  --card: #FBF8F1;
+  --brass: #A9823C;
+  --rule: #E4DCC6;
+  --muted: #71695A;
+  --text: #2E2B22;
+  --positive: #4B6858;
+  --caution: #8C7A4A;
+  --negative: #9B5A45;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
