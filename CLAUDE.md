@@ -29,6 +29,7 @@ properties in `input.css`'s `:root`):
 |---|---|---|
 | `ink` | `#17233F` | Dark surface: header/nav bg, footer, hero sections, mark badge bg |
 | `inkHover` | `#0F1830` | Hover state for ink-colored buttons/surfaces |
+| `inkElevated` | `#202E52` | Solid (non-transparent) card surfaces sitting on top of an `ink` hero section — see the transparency rule below |
 | `paper` | `#F1EAD9` | Page background; body text color when on an `ink` surface |
 | `paperMuted` | `#EAE1CC` | Alternating/subtle section backgrounds (a touch darker than `paper`) |
 | `card` | `#FBF8F1` | Card surfaces (replaces plain white) |
@@ -69,6 +70,26 @@ Badge version (favicon, square contexts) is `assets/favicon.svg`. Inline/line ve
 
 Never use a checkmark, circuit, or sparkle icon for this brand again — that was the
 Proofworks-era mark and it's retired along with that name.
+
+## Avoid these AI-generated-design tells
+
+Two patterns got flagged by Nico directly and are banned sitewide, not just fixed once:
+
+- **No bordered-pill "eyebrow" badge above a headline** (small uppercase text inside a
+  `rounded-full border` chip, sitting alone above an `<h1>`/`<h2>` to announce the
+  section topic). This reads as an AI-generated-landing-page default. Use a plain-text
+  eyebrow instead: `<p class="text-brand-brass font-medium text-sm uppercase tracking-widest mb-6">Label</p>`,
+  no background, no border, no pill shape — see `about.html`'s hero for the reference
+  pattern. Small functional badges that convey real state (a "Flagship" ribbon, a
+  pricing-tier tag, a category label on an article card) are fine; the tell is
+  specifically an empty decorative eyebrow doing no informational work beyond
+  "here's the topic."
+- **Never put a translucent card directly on a `.hero-pattern` surface.** The
+  `hero-pattern` background has a faint ledger-rule texture, and a `bg-brand-paper/5`
+  (or similar low-opacity) card lets that texture visibly show through the card
+  interior, which reads as distracting/unintentional rather than deliberate. Any card
+  sitting on top of a hero section needs an opaque background — use `bg-brand-inkElevated`
+  (solid), not a `brand-paper` or `brand-ink` opacity variant.
 
 ## Voice rules
 

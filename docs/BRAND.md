@@ -32,6 +32,13 @@ cover, resolved as follows:
 - **`inkHover` (`#0F1830`)** — a touch darker than `ink`, for hover states on ink-colored
   buttons (the site darkens buttons on hover; opacity alone reads wrong against a solid
   ink button, so this needed a real second value).
+- **`inkElevated` (`#202E52`)** — added after Nico flagged the homepage hero's three
+  feature cards: they used `bg-brand-paper/5`, and the hero's ledger-rule texture was
+  visibly bleeding through the translucent card interiors, reading as an unintentional
+  glitch rather than a deliberate glass effect. `inkElevated` is a solid, slightly
+  lighter navy for any card that needs to sit on top of a `.hero-pattern` section. See
+  `CLAUDE.md`'s "Avoid these AI-generated-design tells" section — this is now a standing
+  rule, not a one-off fix.
 - **`paperMuted` (`#EAE1CC`)** — for alternating section backgrounds, a role the original
   site filled with `slate-50`. Sits between `paper` and `rule` in value; reads as a subtle
   shift, not a hard boundary. Conveniently doubles as a "ledger ruled-row" callback.
