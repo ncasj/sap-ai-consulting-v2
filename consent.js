@@ -104,17 +104,17 @@
     banner.setAttribute('aria-label', 'Cookie consent');
     banner.style.cssText =
       'position:fixed;bottom:0;left:0;right:0;z-index:9999;' +
-      'background:#0b1120;border-top:1px solid #334155;' +
+      'background:#17233F;border-top:1px solid rgba(241,234,217,.14);' +
       'padding:1rem 1.5rem;display:flex;flex-wrap:wrap;align-items:center;' +
-      'justify-content:space-between;gap:1rem;font-family:Inter,system-ui,sans-serif;' +
+      'justify-content:space-between;gap:1rem;font-family:"Public Sans",system-ui,sans-serif;' +
       'transform:translateY(100%);transition:transform .3s ease;';
 
     var text = document.createElement('p');
-    text.style.cssText = 'color:#cbd5e1;font-size:.875rem;margin:0;max-width:48rem;line-height:1.5;';
+    text.style.cssText = 'color:#EAE1CC;font-size:.875rem;margin:0;max-width:48rem;line-height:1.5;';
     text.innerHTML =
-      'We use cookies and analytics (Google Analytics, Mixpanel) to understand how visitors use our site. ' +
-      'By accepting, you consent to analytics tracking and session recording. ' +
-      '<a href="/privacy.html" style="color:#34d399;text-decoration:underline;">Privacy Policy</a>';
+      'I use Google Analytics and Mixpanel to understand how people use this site. ' +
+      'Accepting allows analytics and session recording. ' +
+      '<a href="/privacy.html" style="color:#A9823C;text-decoration:underline;">Privacy Policy</a>';
 
     var btns = document.createElement('div');
     btns.style.cssText = 'display:flex;gap:.5rem;flex-shrink:0;';
@@ -122,8 +122,8 @@
     var decline = document.createElement('button');
     decline.textContent = 'Decline';
     decline.style.cssText =
-      'padding:.5rem 1.25rem;border:1px solid #475569;color:#e2e8f0;' +
-      'background:transparent;border-radius:.375rem;font-size:.875rem;cursor:pointer;font-family:inherit;';
+      'padding:.5rem 1.25rem;border:1px solid rgba(241,234,217,.3);color:#F1EAD9;' +
+      'background:transparent;border-radius:.5rem;font-size:.875rem;cursor:pointer;font-family:inherit;';
     decline.addEventListener('click', function () {
       setConsent('declined');
       removeBanner();
@@ -132,8 +132,8 @@
     var accept = document.createElement('button');
     accept.textContent = 'Accept';
     accept.style.cssText =
-      'padding:.5rem 1.25rem;border:none;color:#0b1120;' +
-      'background:#34d399;border-radius:.375rem;font-size:.875rem;cursor:pointer;' +
+      'padding:.5rem 1.25rem;border:none;color:#17233F;' +
+      'background:#A9823C;border-radius:.5rem;font-size:.875rem;cursor:pointer;' +
       'font-weight:600;font-family:inherit;';
     accept.addEventListener('click', function () {
       setConsent('accepted');
