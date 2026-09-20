@@ -97,8 +97,8 @@ about three weeks:
    workflow, and define the success criteria and safeguards.
 2. **Build (weeks 2–3):** deliver one production-ready AI-assisted automation in the
    client's existing stack.
-3. **Hand off:** provide the runbook, operator and ownership checklists, training, and
-   a prioritized backlog of the next two or three automations.
+3. **Hand off:** provide the runbook, owner checklist, training, and a prioritized
+   backlog of the next two or three automations.
 
 The sprint replaces the public "Audit + Implementation" label. Advisory remains an
 optional follow-on for teams that can own execution. Greenfield AI products, core-system
