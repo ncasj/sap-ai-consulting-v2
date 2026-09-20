@@ -82,3 +82,27 @@ Treat this section, not the brief or the "v2-specific decisions" list above, as 
    the site at all, so there is nothing for the agreement check to clear.
 2. ~~Confirm price ranges in §4 of the brief before launch.~~ Moot: prices are no longer
    displayed, so there are no ranges to confirm.
+
+## Update 2026-09-20: AI Workflow Sprint positioning
+
+The current public positioning expands the professional services beachhead to include
+owner-run businesses with the same thin-bench problem. The primary buyer is still an
+owner, managing partner, COO, operations lead, or revenue leader carrying technology
+work on top of the real job.
+
+The lead paid offer is now the **AI Workflow Sprint**, a single engagement that runs
+about three weeks:
+
+1. **Map (week 1):** inventory the existing tools and manual handoffs, choose one
+   workflow, and define the success criteria and safeguards.
+2. **Build (weeks 2–3):** deliver one production-ready AI-assisted automation in the
+   client's existing stack.
+3. **Hand off:** provide the runbook, operator and ownership checklists, training, and
+   a prioritized backlog of the next two or three automations.
+
+The sprint replaces the public "Audit + Implementation" label. Advisory remains an
+optional follow-on for teams that can own execution. Greenfield AI products, core-system
+replacement, open-ended fractional engineering, and enterprises with established AI or
+integration teams are out of scope.
+
+Pricing remains unposted. Every engagement is custom scoped after an intro call.
